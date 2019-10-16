@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "reactstrap";
-import Highlight from "../components/Highlight";
+// import Highlight from "../components/Highlight";
 import { useAuth0 } from "../react-auth0-spa";
 
 const ExternalApi = () => {
@@ -45,7 +45,7 @@ const ExternalApi = () => {
       <div className="result-block-container">
         <div className={`result-block ${showResult && "show"}`}>
           <h6 className="muted">Result</h6>
-          <Highlight>{JSON.stringify(apiMessage, null, 2)}</Highlight>
+          {JSON.stringify(apiMessage, null, 2)}
         </div>
       </div>
     </>
